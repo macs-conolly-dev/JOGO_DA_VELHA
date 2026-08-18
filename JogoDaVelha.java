@@ -30,15 +30,14 @@ public class JogoDaVelha extends JFrame {
         JPanel painel = new JPanel();
         painel.setBackground(Tema.FUNDO);
         painel.setBorder(new EmptyBorder(24, 24, 12, 24));
-        
-        JLabel titulo = new JLabel("JOGO DA VELHA");
+        Label titulo = new Label("JOGO DA VELHA");
         titulo.setFont(Tema.FONTE_TITULO);
         titulo.setForeground(Tema.TEXTO);
-        titulo.setHorizontalAlignment(SwingConstants.CENTER);
+        titulo.setAlignment(Label.CENTER);
 
         statusLabel.setFont(Tema.FONTE_STATUS);
         statusLabel.setForeground(Tema.TEXTO_FRACO);
-        statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        statusLabel.setHorizontalTextPosition(SwingConstants.CENTER);
 
         JPanel container = new JPanel(new GridLayout(2, 1));
         container.setBackground(Tema.FUNDO);
